@@ -1,0 +1,316 @@
+/* All components  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* utility classes  */
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* App.js component  */
+
+/* Navbar component  */
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: #fff;
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.navbarRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+.navbarLeft {
+  padding: 10px;
+  margin: 0 10px;
+}
+.navbarRight {
+  display: flex;
+}
+
+.navbarRight > li {
+  list-style-type: none;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  opacity: 1;
+}
+
+.navbarRight > li:hover {
+  opacity: 0.6;
+}
+
+/* Register.js component  */
+
+.mainContainer {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  background: url("https://wallpapercave.com/wp/wp6733041.jpg");
+  height: 100%;
+  width: 60vw;
+  margin-top: 8rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.right {
+  margin-top: 8rem;
+  height: 100%;
+  width: 40vw;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right form {
+  text-align: center;
+}
+
+.right h1 {
+  font-size: 2rem;
+}
+
+.inp {
+  outline: none;
+  padding: 20px;
+  width: 80%;
+  margin: 15px 0;
+  background-color: rgba(218, 217, 217, 0.541);
+  border: none;
+  font-size: 1.4rem;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  margin: 5px 0;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 14px;
+  width: 40%;
+  background-color: #162944;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d80286;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+
+.btn:hover {
+  box-shadow: inset 400px 0 0 0 #d80286;
+}
+/* Login.js component  */
+.loginLeft {
+  background: url("https://wallpaperaccess.com/full/1853716.jpg");
+  height: 100%;
+  width: 60vw;
+  margin-top: 8rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.btn1 {
+  color: #fff;
+  border: none;
+  margin: 5px 0;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 14px;
+  width: 40%;
+  background-color: green;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d80286;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+
+.btn1:hover {
+  box-shadow: inset 400px 0 0 0 #d80286;
+}
+
+/* Not found component  */
+.notfound {
+  margin-top: 8rem;
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.heading {
+  font-size: 3rem;
+  color: red;
+}
+
+.para {
+  font-size: 2.2rem;
+}
+
+/* Create component  */
+.create {
+  margin-top: 80px;
+  min-height: calc(100vh - 8rem);
+  max-height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://cdn.statically.io/img/i.pinimg.com/originals/0e/c3/29/0ec329b7ab75d1499c43ef0acee86749.png");
+}
+
+.createContainer {
+  width: 40%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 4px 6px 8px -4px #000;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.createContainersm {
+  padding: 10px 0;
+  width: 30%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 4px 6px 8px -4px #000;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.createHeading {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.createContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentHeading {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  padding: 6px;
+}
+
+.input {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: rgba(218, 217, 217, 0.541);
+  font-size: 1.4rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/* .input:focus {
+  border-bottom: 2px solid #d80286;
+} */
+
+.imageLabel {
+  display: block;
+  width: 50%;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+#image {
+  display: none;
+}
+
+.btn2 {
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  width: 40%;
+}
+
+.imagePreview {
+  margin: 10px 0;
+  height: 40%;
+  width: 90%;
+}
+/* media queries  */
+@media (min-width: 400px) and (max-width: 850px) {
+  .left,
+  .loginLeft {
+    display: none;
+  }
+  .right {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1150px) {
+  .left,
+  .loginLeft {
+    width: 50vw;
+  }
+
+  .right {
+    width: 50vw;
+  }
+}
